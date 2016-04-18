@@ -117,7 +117,7 @@ namespace FatZebra
 		/// <param name="reference">The purchase reference or Fat Zebra ID.</param>
 		public static Response<Purchase> Get(string reference)
 		{
-			return Gateway.Get<Purchase> (String.Format ("purchases/#{0}.json", reference));
+			return Gateway.Get<Purchase> (String.Format ("purchases/{0}.json", reference));
 		}
 
 		/// <summary>
